@@ -8,7 +8,6 @@
  
   }
  function getMqttfromlineMsg($Topic,$lineMsg){
-   put("https://api.netpie.io/microgear/".$APPID.$Topic."?retain&auth=".$KEY.":".$SECRET,$msg);
  
     $pos = strpos($lineMsg, ":");
     if($pos){
@@ -49,5 +48,4 @@
  //$Topic = "NodeMCU1";
  //$lineMsg = "CHECK";
  //getMqttfromlineMsg($Topic,$lineMsg);
-put("https://api.netpie.io/microgear/".$APPID.$Topic."?retain&auth=".$KEY.":".$SECRET,$msg);
 ?>
